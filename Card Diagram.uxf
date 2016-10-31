@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
+      <x>70</x>
       <y>40</y>
       <w>220</w>
       <h>210</h>
@@ -21,7 +21,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>300</x>
+      <x>310</x>
       <y>40</y>
       <w>200</w>
       <h>140</h>
@@ -40,7 +40,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
+      <x>530</x>
       <y>40</y>
       <w>230</w>
       <h>170</h>
@@ -62,12 +62,67 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
+      <x>400</x>
       <y>0</y>
       <w>270</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0;250.0;10.0;250.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>340</y>
+      <w>340</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::Deck
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>600</y>
+      <w>340</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::PlayingCardDeck
+--
+cards : [PlayingCard]
+--
++init
++shuffleDeck() ; Void
++orderDeck() : Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>570</y>
+      <w>30</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>200</y>
+      <w>230</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=52</panel_attributes>
+    <additional_attributes>10.0;550.0;200.0;10.0</additional_attributes>
   </element>
 </diagram>
