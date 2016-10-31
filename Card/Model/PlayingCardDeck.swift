@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCardDeck : Deck
 {
-        internal lazy var cards = [PlayingCard()]
+    internal lazy var cards = [PlayingCard()]
     override init()
     {
         super.init()
