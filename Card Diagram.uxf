@@ -41,9 +41,9 @@ public/priva as needed (+/-)</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>530</x>
-      <y>40</y>
-      <w>230</w>
-      <h>170</h>
+      <y>340</y>
+      <w>340</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
 --
@@ -56,6 +56,7 @@ public/priva as needed (+/-)</panel_attributes>
 + getColor() : UiColor
 + intit() : Initializer
 + toString() : String
++ init(withRank:Int, ofSuit:String
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -64,11 +65,11 @@ public/priva as needed (+/-)</panel_attributes>
     <coordinates>
       <x>400</x>
       <y>0</y>
-      <w>270</w>
-      <h>60</h>
+      <w>320</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0;250.0;10.0;250.0;40.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0;300.0;10.0;300.0;340.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -116,13 +117,13 @@ cards : [PlayingCard]
     <id>Relation</id>
     <coordinates>
       <x>450</x>
-      <y>200</y>
-      <w>230</w>
-      <h>570</h>
+      <y>530</y>
+      <w>100</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=52</panel_attributes>
-    <additional_attributes>10.0;550.0;200.0;10.0</additional_attributes>
+    <additional_attributes>10.0;210.0;50.0;210.0;50.0;10.0;80.0;10.0</additional_attributes>
   </element>
 </diagram>
