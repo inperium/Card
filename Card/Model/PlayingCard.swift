@@ -11,55 +11,23 @@ import UIKit
 class PlayingCard : Card
 {
     internal var suit : String
-        {
-        get
-        {
-            return self.suit
-        }
-        set(suit)
-        {
-            self.suit = suit
-        }
-    }
     internal var color : UIColor
-        {
-        get
-        {
-            return self.color
-        }
-        set(color)
-        {
-            self.color = color
-        }
-    }
-    
     internal var rank : Int
-    {
-        get
-        {
-            return self.rank
-        }
-        set(rank)
-        {
-            self.rank = rank
-        }
-    }
     
     override init()
     {
-
-        super.init()
         rank = 0
         suit = ""
         color = UIColor.redColor()
+        super.init()
     }
     
     init(withRank: Int, ofSuit:String)
     {
-        super.init()
         color = UIColor.redColor()
         suit = ofSuit
         rank = withRank
+        super.init()
     }
     
     func getRank() -> Int
