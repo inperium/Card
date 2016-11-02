@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>40</y>
-      <w>220</w>
-      <h>210</h>
+      <x>441</x>
+      <y>117</y>
+      <w>198</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>Package::Classname
 --
@@ -21,10 +21,10 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>40</y>
-      <w>200</w>
-      <h>140</h>
+      <x>657</x>
+      <y>117</y>
+      <w>180</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Card
 --
@@ -40,10 +40,10 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
-      <y>340</y>
-      <w>340</w>
-      <h>360</h>
+      <x>855</x>
+      <y>387</y>
+      <w>306</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
 --
@@ -63,10 +63,10 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>0</y>
-      <w>320</w>
-      <h>360</h>
+      <x>738</x>
+      <y>81</y>
+      <w>288</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0;300.0;10.0;300.0;340.0</additional_attributes>
@@ -74,41 +74,44 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>340</y>
-      <w>340</w>
-      <h>240</h>
+      <x>486</x>
+      <y>387</y>
+      <w>306</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
-
---</panel_attributes>
+- cards : [Card]
+--
++ shuffleDeck() : Void
++ init
++ shuffleDeck : Void
++ cutDeck : Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>600</y>
-      <w>340</w>
-      <h>250</h>
+      <x>486</x>
+      <y>621</y>
+      <w>306</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-cards : [PlayingCard]
+
 --
 +init
-+shuffleDeck() ; Void
 +orderDeck() : Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>570</y>
-      <w>30</w>
-      <h>50</h>
+      <x>648</x>
+      <y>594</y>
+      <w>27</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
@@ -116,10 +119,10 @@ cards : [PlayingCard]
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>530</y>
-      <w>100</w>
-      <h>240</h>
+      <x>783</x>
+      <y>558</y>
+      <w>90</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1

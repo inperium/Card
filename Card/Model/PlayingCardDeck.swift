@@ -10,7 +10,6 @@ import UIKit
 
 class PlayingCardDeck : Deck
 {
-    internal lazy var cards = [PlayingCard()]
     override init()
     {
         super.init()
@@ -25,11 +24,6 @@ class PlayingCardDeck : Deck
                 cards.append(tempCard)
             }
         }
-    }
-    
-    func shuffleDeck() -> Void
-    {
-        
     }
     
     func orderDeck() -> Void
