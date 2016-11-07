@@ -11,6 +11,8 @@ import UIKit
 class CardGameController : UIViewController
 {
     private lazy var clickCount = Int()
+    private lazy var cardDeck = PlayingCardDeck()
+    
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var cardButton: UIButton!
 
@@ -24,6 +26,12 @@ class CardGameController : UIViewController
     {
         clickCount += 1
         let content = "You clicked \(clickCount) times"
+        if let currentCard = cardDeck.drawCard() as? PlayingCard
+        {
+            cardButton.setTitle("\(currentCard.rank) \(currentCard.suit)", forState: UIControlState.Normal)
+        }else{
+            cardButton.setTitle("Deck Empty", forState: UIControlState.Normal)
+        }
         cardLabel.text = content
     }
 }
