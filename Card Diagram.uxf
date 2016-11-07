@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
+      <x>450</x>
       <y>117</y>
       <w>198</w>
       <h>189</h>
@@ -21,7 +21,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>657</x>
+      <x>666</x>
       <y>117</y>
       <w>180</w>
       <h>126</h>
@@ -40,7 +40,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>855</x>
+      <x>864</x>
       <y>387</y>
       <w>306</w>
       <h>324</h>
@@ -63,7 +63,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>738</x>
+      <x>747</x>
       <y>81</y>
       <w>288</w>
       <h>324</h>
@@ -74,7 +74,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>486</x>
+      <x>495</x>
       <y>387</y>
       <w>306</w>
       <h>216</h>
@@ -86,20 +86,22 @@ public/priva as needed (+/-)</panel_attributes>
 + shuffleDeck() : Void
 + init
 + shuffleDeck : Void
-+ cutDeck : Void</panel_attributes>
++ cutDeck : Void
++ drawCard : Card!
++ drawRandomCard() : Card!</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>486</x>
+      <x>495</x>
       <y>621</y>
       <w>306</w>
       <h>225</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-
+- card
 --
 +init
 +orderDeck() : Void</panel_attributes>
@@ -108,7 +110,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
+      <x>657</x>
       <y>594</y>
       <w>27</w>
       <h>45</h>
@@ -119,7 +121,7 @@ public/priva as needed (+/-)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
+      <x>792</x>
       <y>558</y>
       <w>90</w>
       <h>216</h>
@@ -128,5 +130,16 @@ public/priva as needed (+/-)</panel_attributes>
 m1=1
 m2=52</panel_attributes>
     <additional_attributes>10.0;210.0;50.0;210.0;50.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>234</y>
+      <w>135</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;130.0;10.0</additional_attributes>
   </element>
 </diagram>
