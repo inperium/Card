@@ -14,18 +14,24 @@ class Deck
     
     func shuffleDeck() -> Void
     {
-        var tempDeck() = [Card]()
+        //Creates a temp deck to hold cards.
+        var tempDeck = [Card]()
         
+        //Repeat until no cards are left.
         while self.cards.count > 0
         {
+            //Random number from one to the maximum cards in the current deck.
             let randomIndex = Int (arc4random() % (UInt32(cards.count)))
             
+            //Removes the random card.
             let removedCard = cards.removeAtIndex(randomIndex)
             
-            tempDeck.append()
+            //Places the random card in the temporary deck.
+            tempDeck.append(removedCard)
             
         }
         
+        //Replace the data member with the updated data.
         self.cards = tempDeck
         
     }
