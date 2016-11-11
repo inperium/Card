@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-eI-fKh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-eI-fKh">
                                 <rect key="frame" x="287" y="133" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-Ws-bMG">
-                                <rect key="frame" x="222" y="184" width="156" height="232"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-Ws-bMG">
+                                <rect key="frame" x="486" y="467" width="156" height="232"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
                                 <state key="normal" title="Words" backgroundImage="cardBackImage">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,19 +36,20 @@
                                     <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TEY-x7-V5A"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCi-xE-cAr">
+                                <rect key="frame" x="29" y="28" width="85" height="30"/>
+                                <state key="normal" title="Draw a Card"/>
+                                <connections>
+                                    <action selector="drawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwU-dH-hIu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4Zo-Ws-bMG" firstAttribute="top" secondItem="lwl-eI-fKh" secondAttribute="bottom" constant="30" id="Fjc-dI-OgC"/>
-                            <constraint firstItem="4Zo-Ws-bMG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Veu-rc-OgB"/>
-                            <constraint firstItem="lwl-eI-fKh" firstAttribute="width" secondItem="4Zo-Ws-bMG" secondAttribute="width" constant="-114" id="eQi-CA-QGu"/>
-                            <constraint firstItem="lwl-eI-fKh" firstAttribute="leading" secondItem="4Zo-Ws-bMG" secondAttribute="leading" constant="65" id="lH0-9C-78I"/>
-                            <constraint firstItem="4Zo-Ws-bMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mLa-Hv-5tb"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cardButton" destination="4Zo-Ws-bMG" id="Okk-1v-T6G"/>
                         <outlet property="cardLabel" destination="lwl-eI-fKh" id="Fo2-0H-u7T"/>
+                        <outlet property="drawCard" destination="aCi-xE-cAr" id="YoG-I3-azY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

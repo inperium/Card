@@ -15,6 +15,7 @@ class CardGameController : UIViewController
     
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var cardButton: UIButton!
+    @IBOutlet weak var drawCard: UIButton!
 
     override func viewDidLoad() -> Void
     {
@@ -22,16 +23,22 @@ class CardGameController : UIViewController
         print(tempCard.toString())
     }
     
-    @IBAction func cardClick(sender: UIButton)
+    @IBAction func drawCard(sender: UIButton)
     {
-        clickCount += 1
-        let content = "You clicked \(clickCount) times"
-        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
-        {
-            cardButton.setTitle("\(currentCard.rank) \(currentCard.suit)", forState: UIControlState.Normal)
-        }else{
-            cardButton.setTitle("Deck Empty", forState: UIControlState.Normal)
-        }
-        cardLabel.text = content
+        
     }
+    
+    
+    //@IBAction func cardClick(sender: UIButton)
+    //{
+    //    clickCount += 1
+    //    let content = "You clicked \(clickCount) times"
+    //    if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
+    //    {
+    //        cardButton.setTitle("\(currentCard.rank) \(currentCard.suit)", forState: UIControlState.Normal)
+    //    }else{
+    //        cardButton.setTitle("Deck Empty", forState: UIControlState.Normal)
+    //    }
+    //    cardLabel.text = content
+    // }
 }
