@@ -23,8 +23,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCi-xE-cAr">
+                                <rect key="frame" x="29" y="28" width="85" height="30"/>
+                                <state key="normal" title="Draw a Card"/>
+                                <connections>
+                                    <action selector="drawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwU-dH-hIu"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-Ws-bMG">
-                                <rect key="frame" x="486" y="467" width="156" height="232"/>
+                                <rect key="frame" x="238" y="243" width="156" height="232"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
                                 <state key="normal" title="Words" backgroundImage="cardBackImage">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,13 +41,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TEY-x7-V5A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCi-xE-cAr">
-                                <rect key="frame" x="29" y="28" width="85" height="30"/>
-                                <state key="normal" title="Draw a Card"/>
-                                <connections>
-                                    <action selector="drawCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwU-dH-hIu"/>
                                 </connections>
                             </button>
                         </subviews>
