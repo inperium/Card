@@ -15,7 +15,9 @@ class CardGameController : UIViewController
     
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var cardButton: UIButton!
-    @IBOutlet weak var drawCard: UIButton!
+    @IBOutlet weak var scoreCount: UILabel!
+    @IBOutlet weak var firstCard: UILabel!
+    @IBOutlet weak var secondCard: UILabel!
 
     override func viewDidLoad() -> Void
     {
