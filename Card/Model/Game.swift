@@ -24,7 +24,23 @@ class Game
     {
         score = 0
         
+        while score < 11
+        {
+            
+        }
+
+    }
         
+    func checkMatch() -> Bool
+    {
+        let cardsMatch : Bool
+        if(hand[0].rank == hand[1].rank || hand[0].suit == hand[1].suit)
+        {
+            cardsMatch = true
+        }else{
+            cardsMatch = false
+        }
+        return cardsMatch
         
     }
     

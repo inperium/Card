@@ -27,6 +27,9 @@ class CardGameController : UIViewController
     
     @IBAction func drawCard(sender: UIButton)
     {
+        var hand = [PlayingCard]()
+        hand.append(PlayingCard())
+        hand.append(PlayingCard())
         
     }
     
