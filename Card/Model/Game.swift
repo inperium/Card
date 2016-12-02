@@ -26,11 +26,10 @@ class Game
         
         while score < 11
         {
-            
         }
 
     }
-        
+    
     func checkMatch() -> Bool
     {
         let cardsMatch : Bool
@@ -41,7 +40,8 @@ class Game
             cardsMatch = false
         }
         return cardsMatch
-        
     }
+    
+    var hand = [PlayingCard]()
     
 }
